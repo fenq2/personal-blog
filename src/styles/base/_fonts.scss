@@ -1,3 +1,18 @@
 @font-face {
-  src: url("");
+  font-family: "CenturyGothic";
+  src:
+    url("../fonts/CenturyGothic/CenturyGothic.woff"),
+    url("../fonts/CenturyGothic/CenturyGothic.woff2");
+}
+
+@font-face {
+  font-family: "CenturyGothic-Bold";
+  src:
+    url("../fonts/CenturyGothic/CenturyGothic-Bold.woff"),
+    url("../fonts/CenturyGothic/CenturyGothic-Bold.woff2");
+}
+
+@font-face {
+  font-family: "CerebriSans-Medium";
+  src: url("../fonts/CerebriSans/CerebriSans-Medium.woff");
 }

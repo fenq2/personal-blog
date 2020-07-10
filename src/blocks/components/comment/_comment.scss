@@ -1,0 +1,28 @@
+.comment {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #989a9c;
+  transition: .3s;
+
+  &:hover {
+    color: $main-brown;
+
+    .comment__icon {
+      fill: $main-brown;
+    }
+  }
+
+  &__icon {
+    @include size(16px);
+
+    transition: .3s;
+  }
+
+  &__text {
+    display: block;
+    padding-left: 10px;
+  }
+}

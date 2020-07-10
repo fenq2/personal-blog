@@ -1,0 +1,21 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: $main-dark;
+  border: 2px solid transparent;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+  transition: .3s;
+  font-weight: bold;
+  padding: 10px 15px;
+
+  &:hover {
+    background: #ffffff;
+    color: $main-dark;
+    border: 2px solid $main-dark;
+  }
+}

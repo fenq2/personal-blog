@@ -1,0 +1,11 @@
+mixin categoriesItem(title, imgPath)
+    a(href="#" style=imgPath).categories-item
+        .categories-item__wrap
+            .categories-item__info
+                h4.categories-item__title= title
+
+.main-categories
+    .container
+        +categoriesItem('Frontend', "background-image: url('images/content/javascript.jpg');")
+        +categoriesItem('Backend', "background-image: url('images/content/javascript.jpg');")
+        +categoriesItem('IT-обучение', "background-image: url('images/content/javascript.jpg');")

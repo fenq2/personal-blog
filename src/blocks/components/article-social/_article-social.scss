@@ -1,0 +1,32 @@
+.article-social {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 151px;
+
+  &__icon {
+    @include size(16px);
+
+    transition: .3s;
+
+    &_vk {
+      @include size(16px);
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+
+    &:not(:last-child) {margin-right: 15px}
+
+    &:hover {
+      .article-social__icon {
+        fill: #2f7fd4;
+      }
+    }
+  }
+}

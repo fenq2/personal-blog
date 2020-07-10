@@ -20,7 +20,6 @@ module.exports = task('pug2html', () => {
 		.pipe(pugLinter({ reporter: 'default' }))
 		.pipe(pug({ pretty: true }))
 		.pipe(bemValidator())
-		.pipe(htmlValidator())
 		.pipe(dest('./build/'))
 });
 

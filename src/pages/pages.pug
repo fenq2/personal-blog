@@ -1,0 +1,12 @@
+extends layouts/default
+
+block variables
+    - const title = "Список страниц"
+
+block content
+    nav.pages-nav
+        span.pages-nav__title Список страниц:
+        ul
+            li.pages-nav__item
+                a(href="home.html").pages-nav__link Главная
+block scripts

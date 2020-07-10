@@ -20,9 +20,18 @@ module.exports = task('browser-sync', () => {
 	watch(['src/images/general/*.{png,jpg,gif,svg}',
 		'src/images/content/*.{png,jpg,gif,svg}'], series('images', readyReload))
 	watch('src/images/svg/*.svg', series('sprites', readyReload))
-	watch('src/styles/**/*.scss', series('styles', cb => src('build/styles').pipe(browserSync.stream()).on('end', cb)))
-	watch('src/js/**/*.js', series('scripts', readyReload))
-	watch('src/pages/**/*.pug', series('pug2html', readyReload))
+	watch([
+		'src/styles/**/*.scss',
+		'src/blocks/**/*.scss'
+	], series('styles', cb => src('build/css').pipe(browserSync.stream()).on('end', cb)))
+	watch([
+		'src/js/**/*.js',
+		'src/blocks/**/*.js'
+	], series('scripts', readyReload))
+	watch([
+		'src/pages/**/*.pug',
+		'src/blocks/**/*.pug'
+	], series('pug2html', readyReload))
 
 	watch('package.json', series('copyModules', readyReload))
 });

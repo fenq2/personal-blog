@@ -1,0 +1,9 @@
+.search-prev {
+  &__link {
+    display: block;
+  }
+  &__icon {
+    @include size(18px);
+    fill: $main-dark;
+  }
+}

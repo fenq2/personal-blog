@@ -27,9 +27,9 @@ module.exports = task('sprites', () => {
 	.pipe(svgSprite({
 		mode: {
 			symbol: {
-				sprite: "../sprite.svg"
+				sprite: "sprite.svg"
 			}
 		}
 	}))
-	.pipe(dest('./build/images/svg'));
+	.pipe(dest('./build/images/svg/sprite'));
 });

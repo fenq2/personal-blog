@@ -1,0 +1,15 @@
+include ../../../components/article-tag/article-tag
+
+.article-main
+    +articleTag('Верстка')
+    h3.article-main__title Семантическая верстка сайтов
+    span.article-main__date 7 сентября 2020
+    .article-main__img
+        img(src="images/content/semantic.jpg" alt="Семантическая верстка").article-main__picture
+    p.article-main__description Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit duis sed odio amet. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit duis sed odio amet.
+    .article-main__footer
+        a(href="#").comment
+            +icon('comment', 'comment__icon')
+            span.comment__text 5 комментариев
+        a(href="#").btn.article-main__more Читать далее
+        include ../../../components/article-social/article-social
